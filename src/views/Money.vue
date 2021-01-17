@@ -1,9 +1,8 @@
 <template>
-<div>
-  money
- <Nav></Nav>
+<Layout>
+  Money
+</Layout>
 
-</div>
 
 </template>
 

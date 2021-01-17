@@ -1,18 +1,46 @@
 <template>
-<div class="nav">
-  <router-link to="/money">记账</router-link> |
-  <router-link to="/labels">标签</router-link>|
-  <router-link to="/statistics">统计</router-link>
-</div>
+<nav>
+  <router-link to="/money" class="item">
+    <Icon name="money"></Icon>
+    记账</router-link>
+  <router-link to="/labels" class="item">
+    <Icon name="labels"></Icon>
+    标签</router-link>
+  <router-link to="/Statistics" class="item">
+    <Icon name="Statistics"></Icon>
+    统计</router-link>
+</nav>
 
 </template>
 
 <script>
+import "@/assets/icons/labels.svg"
+import "@/assets/icons/Statistics.svg"
+
+
 export default {
 name: "Nav"
 }
 </script>
 
 <style lang="scss" scoped>
+nav {
+  display: flex;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  flex-direction: row;
+  font-size: 12px;
+  > .item {
+    padding: 2px 0;
+    width: 33.33333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
 
+}
 </style>
