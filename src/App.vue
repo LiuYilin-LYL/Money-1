@@ -8,6 +8,7 @@
 @import "~@/assets/style/reset.scss";
 @import "~@/assets/style/helper.scss";
 body{
+  background:fade-out(#fbeee2,0.3);
   line-height: 1.5;
   font-family: $font-hei;
   -webkit-font-smoothing: antialiased;
